@@ -10,6 +10,12 @@
          и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language">HTML</abbr></p>
       <h1>Кино.бай</h1>
       <p>Кино на любой вкус</p>
+      <form action="">
+        <input type="search" name="seach" placeholder="Поиск">
+        <button type="submit" id="seach">
+        <lable for="seach">Искать</lable>
+        </button>
+      </form>
       <nav>
          <ul role="menubar" style="list-style-type:none">
             <li><a href="#poster">Афиша</a></li>
@@ -83,7 +89,34 @@
       </article>
 <br/>
     <footer>
-
+      <form action="">
+        <p>
+           <lable for="name">Имя Фамилия:</lable>
+           <input type="text" id="name" name="NameFamile"><br>
+         </p>
+         <p>
+           <lable for="mail">Почта:</lable>
+           <input type="email" id="mail" name="email"><br>
+         </p>
+         <details   open>
+           <summary>Дополнительная информация</summary>
+           <fieldset>
+             <legend>Пол</legend>
+             <input type="radio" name="sex" value="1" id="sex-m">
+             <lable for="sex-m">Мужской</lable>
+             <input type="radio" name="sex" value="2">
+             <lable for="sex-f">Женский</lable>
+           </fieldset>
+         </details>
+         <p>
+           <input type="checkbox" id="recom" name="recom">
+           <lable for="recom">Буду рекомендовать фильм</lable><br>
+         </p>
+         <textarea rows="10" cols="70" name="comment"></textarea><br>
+         <button type="submit" id="add" name="add">
+            <lable for="add">Добавить комментарий</lable>
+         </button>
+       </form>
       <address>За какой-либо информацией обращайтесь по адресу <a href="mailto:john.smith@gmail.com"><strong>john.smith@gmail.com</strong></a></address>
       <p><small>© 2018, Кино.бай</small></p>
     </footer>
