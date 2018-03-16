@@ -1,18 +1,55 @@
 ﻿<!DOCTYPE HTML>
 <HTML>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html{
+      font-size: 1em;
+      font-family: tahoma;
+    }
+    
+    p{
+      font-size: 0.8rem;
+    }
+
+    figcaption{
+      font-size: 0.9rem;
+    }
+
+    .mainheader{
+      font-size: 2rem;
+      color:#f60;
+      text-shadow: 0.2em 0.2em #4a4a4a;
+    }
+
+    .header1{
+      text-decoration: none;
+      color:#f60;
+      font-size: 1.3rem;
+    }
+
+     a:hover{
+      color:#f60;
+    }
+    .color{
+      color: #f60;
+    }
+
+
+    </style>
     <title>Кино.бай</title>
     <meta charset="utf-8" />
+
 </head>
 <body>
     <header>
       <p><strong>Внимание!</strong> Этот сайт не использует технологии <abbr title="Cascading Style Sheets">CSS</abbr>
          и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language">HTML</abbr></p>
-      <h1>Кино.бай</h1>
-      <p>Кино на любой вкус</p>
+      <h1 class="mainheader">Кино.бай</h1>
+
       <form action="">
         <input type="search" placeholder="Поиск">
-        <button type="submit" >Искать</button>
+        <button type="submit" ><i class="fa fa-search" style="color:#8e8e8e" ></i></button>
       </form>
       <nav>
          <ul role="menubar" style="list-style-type:none">
@@ -23,18 +60,14 @@
             <li><a href="#Oscar">Оскар 2018</a></li>
          </ul>
       </nav>
-      <blockquote>
-        Бедствием немого кино были ненужные надписи,<br>
-        бедствием нынешнего кино - ненужные диалоги.<br>
-        <cite>Рене Клер</cite>
-      </blockquote>
-      <p>Результаты поиска по запросу: <mark><strong>Властелин колец</strong></mark></p>
+
+      <p>Результаты поиска по запросу: <mark><strong class="color">Властелин колец</strong></mark></p>
       <hr>
     </header>
     <article>
         <header>
-          <h1>
-           <a href="film_page_3.html"><mark>Властелин колец:</mark>Возвращение короля</a>
+          <h1 >
+           <a href="film_page_3.html" class="header1"><mark>Властелин колец:</mark>Возвращение короля</a>
           </h1>
            <figure>
              <img src="./image/img1.jpg"/>
@@ -67,7 +100,7 @@
       <article>
         <header>
           <h1>
-            <a href="film_page_2.html"><mark>Властелин колец:</mark>Две крепости</a>
+            <a href="film_page_2.html" class="header1"><mark>Властелин колец:</mark>Две крепости</a>
           </h1>
           <figure>
              <img src="./image/img3.jpg"/>
@@ -100,7 +133,7 @@
      <article>
         <header>
           <h1>
-            <a href="film_page_1.html"><mark>Властелин колец:</mark>Братство кольца</a>
+            <a href="film_page_1.html" class="header1"><mark>Властелин колец:</mark>Братство кольца</a>
           </h1>
           <figure>
              <img src="./image/img2.jpg"/>
@@ -132,7 +165,7 @@
   <br>
    <aside>
       <header>
-        <h1>Скоро на сайте</h1>
+        <h1 class="color">Скоро на сайте</h1>
       </header>
       <section>
         <header>
@@ -155,8 +188,19 @@
           <small><a href="https://www.kinopoisk.ru/film/mstiteli-voyna-beskonechnosti-2018-843649/">Читать далее...</a></small>
         </p>
       </section>
+      <section>
+        <header>
+         <h1 class="color">Цитата дня</h1>
+        </header>
+        <blockquote>
+          Бедствием немого кино были ненужные надписи,<br>
+          бедствием нынешнего кино - ненужные диалоги.<br>
+          <cite>Рене Клер</cite>
+        </blockquote>
+      </section>
     </aside>
     <footer>
+
       <a href="#top">Наверх страницы</a>
       <address>За какой-либо информацией обращайтесь по адресу <a href="mailto:john.smith@gmail.com"><strong>john.smith@gmail.com</strong></a></address>
       <p><small>© 2018, Кино.бай</small></p>
