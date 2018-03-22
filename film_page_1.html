@@ -2,114 +2,181 @@
 <HTML>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/lord.css">
+  <title>Кино.бай/Властелин колец:Братство кольца</title>
+  <meta charset="utf-8" />
+  <style>
+    .description > section > header h1{
+      width: 100%;
+      background-color: #f3f3f3;
+      padding-top:0.2em;
+      padding-bottom: 0.2em;
+      color:#f60;
+      text-indent:0.5em;
+    }
 
-    <title>Кино.бай/Властелин колец:Братство кольца</title>
-    <meta charset="utf-8" />
+    .frame{
+      display: flex;
+      justify-content:center;
+      align-items:center;
+    }
+    description > section > iframe{
+      max-width: 640px;
+    }
+
+    table{
+      width: 100%;
+      margin: 2em 0 1.5em 0;
+
+    }
+    table > thead > tr > th {
+      background-color: #f60;
+      color:white;
+      text-align:center;
+    }
+    table > tbody > tr > td{
+      background-color: #ffdecc;
+      color: inherit;
+      text-align:center;
+    }
+
+    .form form{
+      padding: 2em;
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      border:0;
+
+    }
+    .form form textarea{
+      resize: none;
+    }
+    .form form button{
+      width: 15em;
+    }
+    .form form input,.main_article form button,
+    .form form textarea{
+      border:0;
+    }
+    .form form lable::after{
+      content: "*";
+      position: absolute;
+      color:red;
+    }
+
+    .center{
+      min-width: 480px;
+    }
+
+
+
+
+
+  </style>
 </head>
 <body>
-    <header>
-      <p><strong>Внимание!</strong> Этот сайт не использует технологии <abbr title="Cascading Style Sheets">CSS</abbr>
-         и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language">HTML</abbr></p>
-      <h1 class="mainheader">Кино.бай</h1>
-
-      <form action="">
-        <input type="search" placeholder="Поиск">
-        <button type="submit" ><span class="fa fa-search"  ></span></button>
-      </form>
-      <nav>
-         <ul role="menubar" style="list-style-type:none">
-            <li><a href="#poster">Афиша</a></li>
-            <li><a href="#Films">Фильмы</a></li>
-            <li><a href="#Ratings">Рейтинги</a></li>
-            <li><a href="#Journal">Журнал</a></li>
-            <li><a href="#Oscar">Оскар 2018</a></li>
-         </ul>
-      </nav>
-        </header>
-    <article>
-      <header>
-        <h1>Властелин колец:Братство кольца</h1>
-        <figure>
-           <img src="./image/img2.jpg"/>
-           <figcaption>Обложка фильма</figcaption>
-         </figure>
-      </header>
-      <section>
+    <div class="center">
+      <div class="main_article">
         <header>
-          <h1>Описание</h1>
+          <div class="main_header">
+            <h1>Кино.бай</h1>
+            <div class="search">
+              <form action="">
+                <input type="search" placeholder="Поиск"><button type="submit" ><span class="fa fa-search"  ></span></button>
+              </form>
+            </div>
+          </div>
+          <nav class="menubar">
+             <ul role="menubar" style="list-style-type:none">
+                <li><a href="#poster">Афиша</a></li>
+                <li><a href="#Films">Фильмы</a></li>
+                <li><a href="#Ratings">Рейтинги</a></li>
+                <li><a href="#Journal">Журнал</a></li>
+                <li><a href="#Oscar">Оскар 2018</a></li>
+             </ul>
+          </nav>
         </header>
-        <p>Сказания о Средиземье - это хроника Великой войны за Кольцо, войны, длившиеся не одну тысячу лет.
-          Тот, кто владел Кольцом, получал власть над всеми живыми тварями, но был обязан служить злу.
-        </p>
-      </section>
-      <section>
-        <header>
-          <h1>Актеры</h1>
-        </header>
-        <p>Элайджа Вуд, Иэн МакКеллен, Вигго Мортенсен, Шон Бин, Орландо Блум, Джон Рис-Дэвис,
-           Иэн Холм, Шон Эстин,  Билли Бойд, Доминик Монахен
-        </p>
-      </section>
-      <section>
+        <article>
           <header>
-            <h1>Трейлер фильма</h1>
+            <h1>Властелин колец:Братство кольца</h1>
           </header>
+          <div class="description">
+            <div class="flex-2">
+                <figure>
+                  <img src="./image/img2.jpg"/>
+                  <figcaption>Обложка фильма</figcaption>
+                </figure>
+                <div class="section-article">
+                  <section>
+                    <header>
+                      <h1>Описание</h1>
+                    </header>
+                    <p>Сказания о Средиземье - это хроника Великой войны за Кольцо, войны, длившиеся не одну тысячу лет.
+                      Тот, кто владел Кольцом, получал власть над всеми живыми тварями, но был обязан служить злу.
+                    </p>
+                  </section>
+                  <section>
+                    <header>
+                      <h1>Актеры</h1>
+                    </header>
+                    <p>Элайджа Вуд, Иэн МакКеллен, Вигго Мортенсен, Шон Бин, Орландо Блум, Джон Рис-Дэвис,
+                       Иэн Холм, Шон Эстин,  Билли Бойд, Доминик Монахен
+                    </p>
+                  </section>
+                </div>
+              </div>
+            <section>
+                <header>
+                  <h1>Трейлер</h1>
+                </header>
+                <div class="frame">
+                  <iframe width="640" height="360" src="https://www.youtube.com/embed/AHWSMnEEPdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <table >
+                    <thead>
+                      <tr>
+                        <th><b>Год:</b></th>
+                        <th><b>Оценка IMDb:</b></th>
+                        <th><b>Бюджет:</b></th>
+                        <th><b>Страна:</b></th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td>2001</td>
+                       <td>8.80<small>(1 389 831)</small></td>
+                       <td>$93 000 000</td>
+                       <td>США</td>
+                     </tr>
+                  </tbody>
+                </table>
+            </section>
+          </div>
+        </article>
+        <div class="form">
+          <form action="">
 
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/AHWSMnEEPdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </section>
-      <section>
-          <table border="1">
-            <caption align="top">Информация</caption>
-              <thead>
-                <tr>
-                  <th><b>Год:</b></th>
-                  <th><b>Оценка IMDb:</b></th>
-                  <th><b>Бюджет:</b></th>
-                  <th><b>Страна:</b></th>
-                </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>2001</td>
-                 <td>8.80<small>(1 389 831)</small></td>
-                 <td>$93 000 000</td>
-                 <td>США</td>
-               </tr>
-            </tbody>
-          </table>
-      </section>
+            <lable for="name">Имя</lable>
+            <input type="text" id="name" name="NameFamile"><br/>
 
-      </article>
-<br/>
-    <footer>
-      <form action="">
-
-           <lable for="name">Имя Фамилия:</lable>
-           <input type="text" id="name" name="NameFamile"><br>
-
-           <lable for="mail">Почта:</lable>
-           <input type="email" id="mail" name="email"><br>
-         <details   open>
-           <summary>Дополнительная информация</summary>
-           <fieldset>
-             <legend>Пол</legend>
-             <input type="radio" name="sex" value="1" id="sex-m">
-             <lable for="sex-m">Мужской</lable>
-             <input type="radio" name="sex" id="sex-f" value="2">
-             <lable for="sex-f">Женский</lable>
-           </fieldset>
-         </details>
-           <input type="checkbox" id="recom" name="recom">
-           <lable for="recom">Буду рекомендовать фильм</lable><br>
-         <textarea rows="10" cols="70" name="comment"></textarea><br>
-         <button type="submit"  name="add">Добавить комментарий </button>
-       </form>
-       <address>За какой-либо информацией обращайтесь по адресу <a href="mailto:john.smith@gmail.com"><strong>john.smith@gmail.com</strong></a></address>
-       <p><small>© 2018, Кино.бай</small></p>
-
-
-      <address>За какой-либо информацией обращайтесь по адресу <a href="mailto:john.smith@gmail.com"><strong>john.smith@gmail.com</strong></a></address>
-      <p><small>© 2018, Кино.бай</small></p>
-    </footer>
+            <lable for="mail">Почта</lable>
+            <input type="email" id="mail" name="email"><br/>
+            <lable for="comment">Комментарий</lable>
+            <textarea rows="10" cols="70" name="comment" id="comment"></textarea>
+            <button type="submit"  name="add">Добавить комментарий </button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+            <a href="#top"><span>Наверх</span></a>
+            <address>За какой-либо информацией обращайтесь по адресу <a href="mailto:john.smith@gmail.com"><strong>john.smith@gmail.com</strong></a></address>
+            <p><small>© 2018, Кино.бай</small></p>
+        </div>
+      </footer>
+    </div>>
 </body>
 </html>
