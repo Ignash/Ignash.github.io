@@ -20,9 +20,11 @@
       justify-content:center;
       align-items:center;
     }
-    description > section > iframe{
+    description > section > iframe,  video{
+      width: 100%;
       max-width: 640px;
     }
+
 
     table{
       width: 100%;
@@ -80,7 +82,7 @@
       <div class="main_article">
         <header>
           <div class="main_header">
-            <h1>Кино.бай</h1>
+              <h1><a href="index.html">Кино.бай</a></h1>
             <div class="search">
               <form action="">
                 <input type="search" placeholder="Поиск"><button type="submit" ><span class="fa fa-search"  ></span></button>
@@ -160,12 +162,12 @@
           <form action="">
 
             <lable for="name">Имя</lable>
-            <input type="text" id="name" name="NameFamile"><br/>
+            <input type="text" id="name" name="NameFamile" required><br/>
 
             <lable for="mail">Почта</lable>
-            <input type="email" id="mail" name="email"><br/>
+            <input type="email" id="mail" name="email" required><br/>
             <lable for="comment">Комментарий</lable>
-            <textarea rows="10" cols="70" name="comment" id="comment"></textarea>
+            <textarea rows="10" cols="70" name="comment" id="comment" required></textarea>
             <button type="submit"  name="add">Добавить комментарий </button>
           </form>
         </div>

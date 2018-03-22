@@ -7,73 +7,70 @@
   <title>Кино.бай/Властелин колец:Две крепости</title>
   <meta charset="utf-8" />
   <style>
-    .description > section > header h1{
-      width: 100%;
-      background-color: #f3f3f3;
-      padding-top:0.2em;
-      padding-bottom: 0.2em;
-      color:#f60;
-      text-indent:0.5em;
-    }
+  .description > section > header h1{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-top:0.2em;
+    padding-bottom: 0.2em;
+    color:#f60;
+    text-indent:0.5em;
+  }
 
-    .frame{
-      display: flex;
-      justify-content:center;
-    }
-    description > section > iframe{
-      max-width: 640px;
-
-    }
-
-    table{
-      width: 100%;
-      margin: 2em 0 1.5em 0;
-
-    }
-    table > thead > tr > th {
-      background-color: #f60;
-      color:white;
-      text-align:center;
-    }
-    table > tbody > tr > td{
-      background-color: #ffdecc;
-      color: inherit;
-      text-align:center;
-    }
-
-    .form form{
-      padding: 2em;
-      background-color: #f3f3f3;
-      display: flex;
-      flex-direction: column;
-      justify-content:flex-start;
-      border:0;
-
-    }
-    .form form textarea{
-      resize: none;
-    }
-    .form form button{
-      width: 15em;
-    }
-    .form form input,.main_article form button,
-    .form form textarea{
-      border:0;
-    }
-    .form form lable::after{
-      content: "*";
-      position: absolute;
-      color:red;
-    }
-
-    .center{
-      min-width: 480px;
-    }
+  .frame{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  description > section > iframe,  video{
+    width: 100%;
+    max-width: 640px;
+  }
 
 
+  table{
+    width: 100%;
+    margin: 2em 0 1.5em 0;
 
+  }
+  table > thead > tr > th {
+    background-color: #f60;
+    color:white;
+    text-align:center;
+  }
+  table > tbody > tr > td{
+    background-color: #ffdecc;
+    color: inherit;
+    text-align:center;
+  }
 
+  .form form{
+    padding: 2em;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    border:0;
 
+  }
+  .form form textarea{
+    resize: none;
+  }
+  .form form button{
+    width: 15em;
+  }
+  .form form input,.main_article form button,
+  .form form textarea{
+    border:0;
+  }
+  .form form lable::after{
+    content: "*";
+    position: absolute;
+    color:red;
+  }
+
+  .center{
+    min-width: 480px;
+  }
   </style>
 </head>
 <body>
@@ -81,7 +78,7 @@
       <div class="main_article">
         <header>
           <div class="main_header">
-            <h1>Кино.бай</h1>
+              <h1><a href="index.html">Кино.бай</a></h1>
             <div class="search">
               <form action="">
                 <input type="search" placeholder="Поиск"><button type="submit" ><span class="fa fa-search"  ></span></button>
@@ -161,12 +158,12 @@
           <form action="">
 
             <lable for="name">Имя</lable>
-            <input type="text" id="name" name="NameFamile"><br/>
+            <input type="text" id="name" name="NameFamile" required><br/>
 
             <lable for="mail">Почта</lable>
-            <input type="email" id="mail" name="email"><br/>
+            <input type="email" id="mail" name="email" required><br/>
             <lable for="comment">Комментарий</lable>
-            <textarea rows="10" cols="70" name="comment" id="comment"></textarea>
+            <textarea rows="10" cols="70" name="comment" id="comment" required></textarea>
             <button type="submit"  name="add">Добавить комментарий </button>
           </form>
         </div>

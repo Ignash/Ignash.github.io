@@ -161,9 +161,9 @@
       display: flex;
       justify-content:center;
     }
-    description > section > iframe{
+    description > section > iframe,  video{
+      width: 100%;
       max-width: 640px;
-
     }
 
     table{
@@ -222,7 +222,7 @@
       <div class="main_article">
         <header>
           <div class="main_header">
-            <h1>Кино.бай</h1>
+              <h1><a href="index.html">Кино.бай</a></h1>
             <div class="search">
               <form action="">
                 <input type="search" placeholder="Поиск"><button type="submit" ><span class="fa fa-search"  ></span></button>
@@ -241,7 +241,7 @@
         </header>
         <article>
           <header>
-            <h1>Властелин колец:Братство кольца</h1>
+            <h1>Властелин колец:Возвращение короля</h1>
           </header>
           <div class="description">
             <div class="flex-2">
@@ -275,7 +275,8 @@
                   <h1>Трейлер</h1>
                 </header>
                 <div class="frame">
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/AHWSMnEEPdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <video src="./video/trailer.mp4" controls>
+                  </video>
                 </div>
             </section>
             <section>
@@ -304,12 +305,12 @@
           <form action="">
 
             <lable for="name">Имя</lable>
-            <input type="text" id="name" name="NameFamile"><br/>
+            <input type="text" id="name" name="NameFamile" required><br/>
 
             <lable for="mail">Почта</lable>
-            <input type="email" id="mail" name="email"><br/>
+            <input type="email" id="mail" name="email" required><br/>
             <lable for="comment">Комментарий</lable>
-            <textarea rows="10" cols="70" name="comment" id="comment"></textarea>
+            <textarea rows="10" cols="70" name="comment" id="comment" required></textarea>
             <button type="submit"  name="add">Добавить комментарий </button>
           </form>
         </div>
