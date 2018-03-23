@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <HTML>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,7 +64,7 @@
      color: #cbcbcb
     }
 
-    li a:hover, .main_header > h1{
+    li a:hover, .main_header > h1>a{
       color: white;
     }
 
@@ -193,6 +193,23 @@
        position:absolute;
        margin: 0.35em 0 0 0.5em;
      }
+
+     svg{
+
+       height: 1.1em;
+       width: 100%;
+
+
+     }
+     svg text{
+       fill:currentColor;
+       top:1em;
+
+     }
+     svg text:hover{
+       filter:url(#blur);
+
+     }
     </style>
     <title>Кино.бай</title>
     <meta charset="utf-8" />
@@ -202,7 +219,16 @@
   <div class="center">
     <header>
         <div class="main_header">
-          <h1><a href="index.html">Кино.бай</a></h1>
+          <h1><a href="index.html">
+            <svg>
+              <defs>
+                <filter id="blur" >
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                </filter>
+              </defs>
+                <text  y="1em"  position="absolute">Кино.бай</text>
+            Кино.бай
+          </a></h1>
           <div class="search">
             <form action="">
               <input type="search" placeholder="Поиск" name="search"><button type="submit" ><span class="fa fa-search"  ></span></button>
@@ -227,8 +253,17 @@
         <article>
           <header>
             <h1 >
-              <a href="film_page_3.html"><mark>Властелин колец:</mark>Возвращение короля</a>
-            </h1>
+              <a href="film_page_3.html">
+            <svg>
+              <defs>
+                <filter id="f1" >
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                </filter>
+              </defs>
+                <text  y="1em"  position="absolute">Властелин колец:Возвращение короля</text>
+          </svg>
+        </a>
+      </h1>
           </header>
           <div class="description">
             <div class="flex-2">
@@ -265,7 +300,17 @@
         <article>
           <header>
             <h1>
-              <a href="film_page_2.html" ><mark>Властелин колец:</mark>Две крепости</a>
+              <a href="film_page_2.html" >
+                <svg>
+                  <defs>
+                    <filter id="f1" >
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                    </filter>
+                  </defs>
+                    <text  y="1em"  position="absolute">Властелин колец:Две крепости</text>
+              </svg>
+
+              </a>
             </h1>
           </header>
           <div class="description">
@@ -303,7 +348,17 @@
         <article>
           <header>
             <h1>
-              <a href="film_page_1.html"><mark>Властелин колец:</mark>Братство кольца</a>
+              <a href="film_page_1.html">
+                <svg>
+                  <defs>
+                    <filter id="f1" >
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                    </filter>
+                  </defs>
+                    <text  y="1em"  position="absolute">Властелин колец:Братство кольца</text>
+              </svg>
+
+              </a>
             </h1>
           </header>
           <div class="description">
