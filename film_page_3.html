@@ -1,150 +1,10 @@
-<!-- <!DOCTYPE HTML>
-<HTML>
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <style>
-      html{
-        font-size: 1em;
-        font-family: tahoma;
-      }
 
-      p{
-        font-size: 0.8rem;
-      }
-
-      figcaption{
-        font-size: 0.9rem;
-      }
-
-
-      .header1{
-        text-decoration: none;
-        color:#f60;
-        font-size: 1.3rem;
-      }
-
-       a:hover{
-        color:#f60;
-      }
-      .color{
-        color: #f60;
-      }
-
-
-      </style>
-    <title>Кино.бай/Властелин колец:Возвращение короля</title>
-    <meta charset="utf-8" />
-</head>
-<body>
-    <header>
-      <p><strong>Внимание!</strong> Этот сайт не использует технологии <abbr title="Cascading Style Sheets">CSS</abbr>
-         и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language">HTML</abbr></p>
-      <h1>Кино.бай</h1>
-
-      <form action="">
-        <input type="search" placeholder="Поиск">
-        <button type="submit" ><span class="fa fa-search"  ></span></button>
-      </form>
-      <nav>
-         <ul role="menubar" style="list-style-type:none">
-            <li><a href="#poster">Афиша</a></li>
-            <li><a href="#Films">Фильмы</a></li>
-            <li><a href="#Ratings">Рейтинги</a></li>
-            <li><a href="#Journal">Журнал</a></li>
-            <li><a href="#Oscar">Оскар 2018</a></li>
-         </ul>
-      </nav>
-
-    </header>
-    <article>
-        <header>
-          <h1>Властелин колец:Возвращение короля</h1>
-           <figure>
-             <img src="./image/img1.jpg"/>
-             <figcaption>Обложка фильма</figcaption>
-           </figure>
-        </header>
-        <section>
-          <header>
-            <h1>Описание</h1>
-          </header>
-          <p>Последняя часть трилогии о Кольце Всевластия и о героях,
-          взявших на себя бремя спасения Средиземья.
-          Повелитель сил ТьмыСаурон направляет свои безчисленные рати под стены Минас-Тирита,
-          крепости Последней Надежды.</p>
-        </section>
-        <section>
-          <header>
-            <h1>Актеры</h1>
-          </header>
-          <p>Элайджа Вуд, Вигго Мортенсен, Шон Эстин, Иэн МакКеллен, Орландо Блум, Доминик Монахен,
-             Билли Бойд, Энди Серкис, Миранда Отто, Бернард Хилл</p>
-        </section>
-        <section>
-          <header>
-            <h1>Трейлер фильма</h1>
-          </header>
-
-          <video src="./video/trailer.mp4" controls>
-
-          </video>
-        </section>
-        <section>
-          <table border="1">
-            <caption align="top">Информация</caption>
-              <thead>
-                <tr>
-                  <th><b>Год:</b></th>
-                  <th><b>Оценка IMDb:</b></th>
-                  <th><b>Бюджет:</b></th>
-                  <th><b>Страна:</b></th>
-                </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>2003</td>
-                 <td>8.90<small>(1 349 172)</small></td>
-                 <td>$94 000 000</td>
-                 <td>США</td>
-               </tr>
-            </tbody>
-          </table>
-        </section>
-
-      </article>
-<br/>
-    <footer>
-      <form action="">
-           <lable for="name">Имя Фамилия:</lable>
-           <input type="text" id="name" name="NameFamile"><br>
-           <lable for="mail">Почта:</lable>
-           <input type="email" id="mail" name="email"><br>
-         <details   open>
-           <summary>Дополнительная информация</summary>
-           <fieldset>
-             <legend>Пол</legend>
-             <input type="radio" name="sex" value="1" id="sex-m">
-             <lable for="sex-m">Мужской</lable>
-             <input type="radio" name="sex" value="2">
-             <lable for="sex-f">Женский</lable>
-           </fieldset>
-         </details>
-           <input type="checkbox" id="recom" name="recom">
-           <lable for="recom">Буду рекомендовать фильм</lable><br>
-         <textarea rows="10" cols="70" name="comment"></textarea><br>
-         <button type="submit" id="add" name="add">Добавить комментарий</button>
-       </form>
-      <address>За какой-либо информацией обращайтесь по адресу <a href="mailto:john.smith@gmail.com"><strong>john.smith@gmail.com</strong></a></address>
-      <p><small>© 2018, Кино.бай</small></p>
-    </footer>
-</body>
-</html> -->
 
 <!DOCTYPE HTML>
 <HTML>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/lord.css">
+  <link rel="stylesheet" href="lord-ring.css">
   <title>Кино.бай/Властелин колец:Возвращение короля</title>
   <meta charset="utf-8" />
   <style>
@@ -161,9 +21,9 @@
       display: flex;
       justify-content:center;
     }
-    description > section > iframe{
+    description > section > iframe,  video{
+      width: 100%;
       max-width: 640px;
-
     }
 
     table{
@@ -208,21 +68,51 @@
     }
 
     .center{
-      min-width: 480px;
+      min-width: 400px;
     }
 
+    abbr{
+      display: inline-block;
+      position: relative;
+    }
 
+    abbr .title{
+      visibility: hidden;
+      position: absolute;
+      width: 12em;
+      border-radius: 0.5em;
+      background-color: black;
+      color:white;
+      text-align: center;
+      opacity: 0.5;
+      padding: 0.5em;
+      left: 0;
+      top:2em;
+    }
 
+    abbr .title::after{
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 0.5em solid transparent;
+      border-right: 0.5em solid transparent;
+      border-bottom: 1em solid black;
+      position: absolute;
+      top:-0.5em;
+      left:0.5em;
+    }
 
-
+    abbr:hover .title{
+      visibility: visible;
+    }
   </style>
 </head>
 <body>
     <div class="center">
-      <div class="main_article">
+
         <header>
           <div class="main_header">
-            <h1>Кино.бай</h1>
+              <h1><a href="index.html">Кино.бай</a></h1>
             <div class="search">
               <form action="">
                 <input type="search" placeholder="Поиск"><button type="submit" ><span class="fa fa-search"  ></span></button>
@@ -239,9 +129,10 @@
              </ul>
           </nav>
         </header>
+      <div class="main_article">
         <article>
           <header>
-            <h1>Властелин колец:Братство кольца</h1>
+            <h1>Властелин колец:Возвращение короля</h1>
           </header>
           <div class="description">
             <div class="flex-2">
@@ -275,7 +166,8 @@
                   <h1>Трейлер</h1>
                 </header>
                 <div class="frame">
-                  <iframe width="640" height="360" src="https://www.youtube.com/embed/AHWSMnEEPdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <video src="./video/trailer.mp4" controls>
+                  </video>
                 </div>
             </section>
             <section>
@@ -283,7 +175,9 @@
                     <thead>
                       <tr>
                         <th><b>Год:</b></th>
-                        <th><b>Оценка IMDb:</b></th>
+                        <th><b>Оценка <abbr >IMDb
+                        <span class="title">Internet Movie Database</span>
+                        </abbr>:</b></th>
                         <th><b>Бюджет:</b></th>
                         <th><b>Страна:</b></th>
                       </tr>
@@ -304,12 +198,12 @@
           <form action="">
 
             <lable for="name">Имя</lable>
-            <input type="text" id="name" name="NameFamile"><br/>
+            <input type="text" id="name" name="NameFamile" required><br/>
 
             <lable for="mail">Почта</lable>
-            <input type="email" id="mail" name="email"><br/>
+            <input type="email" id="mail" name="email" required><br/>
             <lable for="comment">Комментарий</lable>
-            <textarea rows="10" cols="70" name="comment" id="comment"></textarea>
+            <textarea rows="10" cols="70" name="comment" id="comment" required></textarea>
             <button type="submit"  name="add">Добавить комментарий </button>
           </form>
         </div>
