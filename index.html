@@ -26,6 +26,7 @@
       text-shadow: .1em .1em #4a4a4a;
        font-size: 2em;
        font-weight: bold;
+
     }
 
     section h1{
@@ -45,14 +46,18 @@
       width: 70%;
       margin:0 auto ;
       font-size: 0.8em;
+      min-width: 440px;
     }
 
-    .description,aside section, .search_result,footer{
+    .center>header,.main_article,.aside_inf,footer{
+      margin:1em;
+    }
+
+    .description,aside section, .search_result, figure, .section-article,.description>section,footer{
       padding: 1em;
     }
 
     .search_result{
-      margin-top: 1em;
       border-bottom: 1px solid #676767;
     }
 
@@ -82,7 +87,6 @@
      .main_header{
        background: #585858;
        border-radius: 1em 1em 0 0;
-       padding: 1.5em;
        border-bottom: 1px solid #676767;
        display: flex;
        flex-direction: ц;
@@ -98,7 +102,6 @@
      footer, footer a{
        background: #525252;
        color:#cbcbcb;
-       margin-top: 1em;
        border-radius: 0 0 1em 1em;
      }
 
@@ -154,14 +157,12 @@
 
      .main_article{
        flex: 3 ;
-       margin-top: 1.5em;
      }
 
      .aside_inf{
        flex:1 ;
        align-self: stretch;
-       margin: 1.5em 0 0 1.5em;
-       min-width: width 150px;
+       min-width: 150px;
      }
 
      .flex-2{
@@ -172,13 +173,12 @@
      }
      .flex-2 fegure{
        flex:1 ;
-       margin-top: 1.5em;
+       margin-right:1.5em;
      }
      .section-article{
-       min-width: 240px; ;
        flex:4;
        align-self: stretch;
-       margin-left: 1.5em;
+
      }
 
 
@@ -194,22 +194,15 @@
        margin: 0.35em 0 0 0.5em;
      }
 
-     svg{
 
-       height: 1.1em;
-       width: 100%;
-
-
-     }
-     svg text{
-       fill:currentColor;
-       top:1em;
-
-     }
-     svg text:hover{
+    .main_header>h1>a:hover, article>header>h1>a:hover{
        filter:url(#blur);
-
      }
+     svg{
+       height: 0;
+       width: 0;
+     }
+
     </style>
     <title>Кино.бай</title>
     <meta charset="utf-8" />
@@ -219,16 +212,9 @@
   <div class="center">
     <header>
         <div class="main_header">
-          <h1><a href="index.html">
-            <svg>
-              <defs>
-                <filter id="blur" >
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-                </filter>
-              </defs>
-                <text  y="1em"  position="absolute">Кино.бай</text>
-            Кино.бай
-          </a></h1>
+          <h1>
+            <a href="index.html">Кино.бай</a>
+          </h1>
           <div class="search">
             <form action="">
               <input type="search" placeholder="Поиск" name="search"><button type="submit" ><span class="fa fa-search"  ></span></button>
@@ -253,17 +239,9 @@
         <article>
           <header>
             <h1 >
-              <a href="film_page_3.html">
-            <svg>
-              <defs>
-                <filter id="f1" >
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-                </filter>
-              </defs>
-                <text  y="1em"  position="absolute">Властелин колец:Возвращение короля</text>
-          </svg>
-        </a>
-      </h1>
+              <a href="film_page_3.html">Властелин колец:Возвращение короля
+              </a>
+            </h1>
           </header>
           <div class="description">
             <div class="flex-2">
@@ -300,16 +278,7 @@
         <article>
           <header>
             <h1>
-              <a href="film_page_2.html" >
-                <svg>
-                  <defs>
-                    <filter id="f1" >
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-                    </filter>
-                  </defs>
-                    <text  y="1em"  position="absolute">Властелин колец:Две крепости</text>
-              </svg>
-
+              <a href="film_page_2.html" >Властелин колец:Две крепости
               </a>
             </h1>
           </header>
@@ -343,22 +312,12 @@
                 <b>Бюджет:</b> $94 000 000, <b>Страна:</b> США
               </p>
             </section>
-          </div>>
+          </div>
         </article>
         <article>
           <header>
             <h1>
-              <a href="film_page_1.html">
-                <svg>
-                  <defs>
-                    <filter id="f1" >
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-                    </filter>
-                  </defs>
-                    <text  y="1em"  position="absolute">Властелин колец:Братство кольца</text>
-              </svg>
-
-              </a>
+              <a href="film_page_1.html">Властелин колец:Братство кольца</a>
             </h1>
           </header>
           <div class="description">
@@ -385,9 +344,9 @@
                   </p>
                 </section>
               </div>
-            </div>>
+            </div>
             <section>
-                      <p><b>Год:</b> 2001, <b>Оценка IMDb:</b> 8.80<small>(1 389 831)</small>,
+                      <p><b>Год:</b> 2001, <b>Оценка IMDb:</b> 8.80<small>(1 389 831)</small>
                         <b>Бюджет:</b> $93 000 000, <b>Страна:</b> США
                       </p>
                 </section>
@@ -443,5 +402,13 @@
       </div>
       </footer>
   </div>
+  <svg>
+    <defs>
+      <filter id="blur" >
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+      </filter>
+    </defs>
+  </svg>
+
 </body>
 </html>
