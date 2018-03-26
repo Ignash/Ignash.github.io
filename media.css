@@ -1,0 +1,39 @@
+body{
+  background: #d5d5d5
+}
+
+.center{
+    width: 70%;}
+
+header .main_header,header .menubar > ul[role=menubar]{
+  flex-direction: column;
+}
+
+.center .flex-1,.center .flex-2{
+  display: block;
+}
+
+li{
+  padding: 0.75em;
+  display: none;
+}
+
+figure  img {
+  width: 100%;
+  height: auto;
+}
+nav.menubar{
+  position: relative;
+}
+nav.menubar::before{
+  border-bottom: .7em double #888;
+  border-top: .25em solid #888;
+  float: left;
+  height: .2em;
+  width: 2em;
+  content:"";
+  position: absolute;
+}
+nav.menubar:hover>ul>li{
+  display: flex;
+}
