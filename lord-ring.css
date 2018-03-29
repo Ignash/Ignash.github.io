@@ -7,7 +7,18 @@ body{
 img {
     height: 25em;
   }
-
+  img:hover{
+    animation: image 5s infinite alternate ease-out;
+  }
+  @keyframes image{
+    from{}
+    20%{transform: rotatey(180deg) rotate(-5deg)}
+    40%{transform:rotatey(360deg) rotate(-5deg)}
+    60%{transform:rotatex(180deg) rotate(-5deg)}
+    80%{transform:rotatex(360deg) rotate(-5deg)}
+    to{transform: scale(1.2) rotate(5deg);
+    filter:contrast(150%);}
+  }
 figcaption{
   font-size: 0.9rem;
   text-align: center;
