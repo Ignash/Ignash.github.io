@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <script>
+    "use strict"
+    window.onload=function start(){
+      var a=Number(window.prompt('1+1=?',""));
+       if (a===2){
+
+         if (window.confirm('Верно. Перейти к следующеме вопросу?')){
+
+             var randomN =Number(1+Math.random()*(20-1));
+             randomN = Math.round(randomN);
+
+           for (var i=1,factorial=1; i <= parseInt(randomN); i++) factorial*=i;
+
+           var k=window.prompt('Вычислить факториал числа f('+ randomN +')=?',"");
+
+           if (parseInt(k)===factorial)
+          {
+             if(window.confirm('Верно. Попробывать еще раз?'))
+              start()
+              else
+                window.close()
+            }
+            else {
+              if (window.confirm('Не верный ответ. Будете еще пробывать?'))
+                start()
+               else {
+                  window.close()
+                }
+            }
+          }
+          else {
+                window.close()
+          }
+        }
+        else {
+         if (window.confirm('Не верный ответ. Будете еще пробывать?'))
+           start()
+          else {
+             window.close()
+           }
+        }
+    }
+      </script>
+  </head>
+  <body>
+    <button id='butt'>Start</button>
+  </body>
+</HTML>
