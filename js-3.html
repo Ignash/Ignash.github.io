@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <script>
+    "use strict"
+      function Animal(name) {
+        this.name = name;
+      }
+      Animal.prototype.eat = function(food) {
+        this.food = food;
+        console.log( "eat " + this.food);
+      };
+
+      function Lion(name){
+        Animal.call(this, name);
+      }
+
+      Lion.prototype = Object.create(Animal.prototype);
+      Lion.prototype.run = function() {
+        console.log( "running " );
+      };
+      // Lion.prototype.__proto__ = Animal.prototype;
+
+
+      function Rabbit(name) {
+        Animal.call(this, name);
+      }
+      
+      Rabbit.prototype = Object.create(Animal.prototype);
+      Rabbit.prototype.jump = function() {
+        console.log( "jumping" );
+      };
+      // Rabbit.prototype.__proto__ = Animal.prototype;
+
+    </script>
+  </head>
+  <body>
+    <button id='butt'>Start</button>
+  </body>
+</HTML>
