@@ -8,7 +8,7 @@ window.onload=function(){
       if(requests.status == 200) {
         alert(requests.responseText);
       } else {
-        alert(requests.status, 'There was a problem with the request.\n');
+        alert('requests.status='+requests.status+' There was a problem with the request.\n');
       }
 
     }
