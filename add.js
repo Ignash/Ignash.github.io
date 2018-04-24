@@ -6,17 +6,17 @@ window.onload=function(){
   requests.onreadystatechange = function() {
     if (requests.readyState == 4) {
       if(requests.status == 200) {
-        alert(requests.responseText);
-      } else {
-        alert(requests.status, 'There was a problem with the request.\n');
-      }
+        var seachResults=JSON.parse(requests.responseText);
 
+        for (var i = 0; i< seachResults.length; i++){
+        document.getElementsByTagName('main')[0].appendChild(createArticle(seachResults[i]));
+        }
+      } else {
+        alert('requests.status='+requests.status+' There was a problem with the request.\n');
+      }
     }
   };
   requests.send(null);
-
-  var seachResults=requests.responseText;
-
 
   function createHeader(url,title){
     var newHeader = document.createElement('header');
@@ -76,11 +76,6 @@ window.onload=function(){
     Article.appendChild(createFooter(film.footer.year, film.footer.imbd1, film.footer.imbd2, film.footer.budget, film.footer.country));
 
     return Article;
-
-  }
-  for (var i = 0; i< seachResults.length; i++){
-
-  document.getElementsByTagName('main')[0].appendChild(createArticle(seachResults[i]));
 
   }
 }
